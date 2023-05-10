@@ -33,6 +33,7 @@
 <meta name="generator"
 	content="HTML Tidy for Linux/x86 (vers 1st November 2002), see www.w3.org" />
 <title>JPetStore Demo</title>
+<meta name="robots" content="noindex" />
 <meta content="text/html; charset=windows-1252"
 	http-equiv="Content-Type" />
 <meta http-equiv="Cache-Control" content="max-age=0" />
