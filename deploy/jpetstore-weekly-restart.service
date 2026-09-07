@@ -1,6 +1,5 @@
 [Unit]
 Description=Weekly restart of the JPetStore sandbox to reseed its HSQLDB
-After=jpetstore.service
 
 [Service]
 Type=oneshot
