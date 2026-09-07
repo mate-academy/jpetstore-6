@@ -1,0 +1,10 @@
+[Unit]
+Description=Weekly JPetStore sandbox restart (Monday 03:00 UTC)
+
+[Timer]
+OnCalendar=Mon 03:00:00
+Persistent=false
+Unit=jpetstore-weekly-restart.service
+
+[Install]
+WantedBy=timers.target

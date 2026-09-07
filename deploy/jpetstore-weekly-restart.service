@@ -1,0 +1,7 @@
+[Unit]
+Description=Weekly restart of the JPetStore sandbox to reseed its HSQLDB
+After=jpetstore.service
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/systemctl try-restart jpetstore.service

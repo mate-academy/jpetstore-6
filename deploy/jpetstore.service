@@ -1,0 +1,17 @@
+[Unit]
+Description=JPetStore QA sandbox (Tomcat 9 via Maven cargo)
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=ec2-user
+Environment=HOME=/home/ec2-user
+WorkingDirectory=/home/ec2-user/projects/jpetstore-6
+ExecStart=/home/ec2-user/projects/jpetstore-6/mvnw cargo:run -P tomcat90
+Restart=always
+RestartSec=15
+TimeoutStopSec=60
+
+[Install]
+WantedBy=multi-user.target
